@@ -1,9 +1,37 @@
-div {
-    width: 100%;
-    height: 100%;   
+
+body,html {
+  position:relative;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
-video {
-    width: 100%;
-    height: 100%;
-    opacity: .1;
+
+
+.keys {
+  position: absolute;
+  top:0em;
+  z-index:20;
+  min-height: 100em;
+  align-items: center;
+  justify-content: center;
 }
+#video_element{
+    position:absolute;
+    top:0em;
+    z-index:10;
+
+}
+.key {
+  border: .4em solid black;
+  border-radius: .5em;
+  margin: 1em;
+  font-size: 1.5em;
+  padding: 1em .5em;
+  transition: all .07s ease;
+  width: 10em;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5em black;
+}
+
