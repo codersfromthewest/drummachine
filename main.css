@@ -1,3 +1,58 @@
-* {
-    font-family: Helvetica; 
+#aboutlink {
+    color: white;
+    width: 80px;
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-family: 'Jura', sans-serif;
 }
+
+#main-container {
+    height: 100vh;
+    width: 100%;
+    background-image: url("img/drum-background.jpg");
+    font-family:'Jura', sans-serif;
+}
+
+section {
+    color: white;
+    width: 350px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 70px;
+    font-family: 'Rationale', sans-serif;
+}
+
+#kits {
+    width: 100%;
+    display: inline-block;
+    
+}
+
+.kit-container {
+    display: inline-block;
+    width: 200px;
+    margin: 0px 30px;
+}
+
+.kitimage {
+    height: 150px;
+    width: 150px;
+    border: 5px solid white;
+    margin-bottom: 20px;
+    border-radius: 100%;
+ }
+
+ .kit_title {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: 'Rationale', sans-serif;
+ }
+
+ .kit_paragraph {
+
+ }
