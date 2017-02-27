@@ -19,12 +19,6 @@ body {
     text-align: center;
 }
 
-#audio-player div img {
-   animation: mySpin 28s infinite;
-   /*margin: 0px auto;*/
-   overflow: auto;
-}
-
 @keyframes mySpin {
   from {
     transform: rotate(0deg);
@@ -32,4 +26,13 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.record-div {
+   animation: mySpin 0s infinite;
+   overflow: auto;
+}
+
+.spinning-div {
+  animation: mySpin 30s infinite;
 }
