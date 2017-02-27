@@ -8,7 +8,7 @@ var keycode_letters = {
   , 'sounds/sound4.WAV', 'sounds/sound5.WAV', 'sounds/sound6.WAV'
   , 'sounds/sound7.WAV', 'sounds/sound8.WAV', 'sounds/sound9.WAV'
   , 'sounds/sound10.WAV'],//array of file names for sounds
-  key_vids: ['one','two', 'videos/clip5.mp4', 'videos/clip3.mp4', 'videos/clip2.mp4', 'videos/clip4.mp4', 'seven', 'eight', 'videos/clip1.mp4', 'ten']//array of file names for vids
+  key_vids: ['one','two', '', '', '', '', '', '', '', 'ten']//array of file names for vids
 };
 
 //adds a listener to the page that records keycodes and plays corresponding sounds + vids
