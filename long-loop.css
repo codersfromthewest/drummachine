@@ -1,23 +1,28 @@
 body {
     font-family: 'Jura', sans-serif;
-    margin: 50px;
+    margin: 20px auto;
+    width: 95%;
 }
 
 #audio-player {
-  width: 80%;
+  width: 90%;
   margin: 0px auto;
+  text-align: center;
 }
 
-#audio-player div {
-    width: 200px;
-    height: 200px;
-    margin: 5%;
+.play-div {
+    width: 20%;
+    height: 20%;
+    margin: .5% 4%;
     display: inline-block;
     border-radius: 50%;
+    text-align: center;
 }
 
 #audio-player div img {
    animation: mySpin 28s infinite;
+   /*margin: 0px auto;*/
+   overflow: auto;
 }
 
 @keyframes mySpin {
