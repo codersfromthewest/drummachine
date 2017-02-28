@@ -36,3 +36,15 @@ body {
 .spinning-div {
   animation: mySpin 30s infinite;
 }
+
+.audio-element {
+  width: 200px;
+  height: 200px;
+  margin: .5% 4%;
+  outline: 2px solid black;
+}
+
+.audio-element:hover {
+  background-color: blue;
+  cursor: grab;
+}
