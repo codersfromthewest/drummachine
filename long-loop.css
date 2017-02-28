@@ -1,3 +1,9 @@
+html {
+  background-repeat: repeat-y;
+  background-position: center top;
+  opacity: .9;
+}
+
 body {
     font-family: 'Jura', sans-serif;
     margin: 20px auto;

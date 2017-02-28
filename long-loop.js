@@ -12,14 +12,15 @@ function keyHandler (event) {
       var audio = document.getElementById(event.keyCode.toString());
       var rotate = document.getElementsByClassName('record-div');
       rotate[i].classList.toggle('spinning-div');
-      audio.src = key_sounds[i];
-      console.log('audio element selected', audio, audio.paused);
-      if(audio.paused) {
+      console.log('audio element selected', audio, audio.currentTime, audio.paused);
+      if(audio.currentTime === 0) {
         console.log('playing');
+        audio.src = key_sounds[i];
         audio.play();
       } else {
         console.log('not playing');
         audio.pause();
+        audio.currentTime = 0;
       }
     }
   }
