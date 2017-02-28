@@ -12,16 +12,18 @@ window.addEventListener('keydown', keyHandler);
 function keyHandler (event) {
   for (var i = 0; i < key_nums.length; i++) {
     if (event.keyCode === key_nums[i]) {
-      // var filepath = key_sounds[i];
+
       var audio = document.getElementById(event.keyCode.toString());
-      audio.src = key_sounds[i];
-      audio.play();
       var rotate = document.getElementsByClassName('record-div');
-      if (rotate[i].getAttribute('class') === 'record-div'){
-        rotate[i].setAttribute('class', 'spinning-div');
+
+      audio.src = key_sounds[i];
+      if(audio.paused) {
+        audio.play();
       } else {
-        rotate[i].setAttribute('class', 'record-div');
+        console.log('playing');
+        audio.pause();
       }
+      rotate[i].classList.toggle('spinning-div');
     }
   }
 }
