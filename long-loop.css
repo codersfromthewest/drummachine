@@ -1,23 +1,22 @@
 body {
     font-family: 'Jura', sans-serif;
-    margin: 50px;
+    margin: 20px auto;
+    width: 95%;
 }
 
 #audio-player {
-  width: 80%;
+  width: 90%;
   margin: 0px auto;
+  text-align: center;
 }
 
-#audio-player div {
-    width: 200px;
-    height: 200px;
-    margin: 5%;
+.play-div {
+    width: 20%;
+    height: 20%;
+    margin: .5% 4%;
     display: inline-block;
     border-radius: 50%;
-}
-
-#audio-player div img {
-   animation: mySpin 28s infinite;
+    text-align: center;
 }
 
 @keyframes mySpin {
@@ -27,4 +26,25 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.record-div {
+   animation: mySpin 0s infinite;
+   overflow: auto;
+}
+
+.spinning-div {
+  animation: mySpin 30s infinite;
+}
+
+.audio-element {
+  width: 200px;
+  height: 200px;
+  margin: .5% 4%;
+  outline: 2px solid black;
+}
+
+.audio-element:hover {
+  background-color: blue;
+  cursor: grab;
 }
