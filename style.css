@@ -1,31 +1,21 @@
 body,html {
-  /*position:relative;*/
   margin: 0;
   padding: 0;
   font-family: 'Jura', sans-serif;
 
 }
-
-#keys {
-  /*position: absolute;*/
-  top:0px;
-  min-height: 100px;
-  align-items: center;
-  justify-content: center;
-}
 #video_element{
-    /*position:absolute;*/
     top:0em;
 }
 .key {
-    z-index:40;
+  z-index:40;
   border: .4px solid black;
   border-radius: .5px;
   margin: 8px;
   font-size: 15px;
   padding: 1px .5px;
   transition: all .07s ease;
-  width: 200px;
+  width: 2px;
   text-align: center;
   color: white;
   background: rgba(255,0,0,1);
@@ -34,7 +24,17 @@ body,html {
   height:100px;
   float:left; 
 }
+ /*{
+  font-size: 1.2em;
+  text-transform: ;
+  letter-spacing: .1em;
+  color: #ffc600;
+}*/
 
+#videoDiv {width: 100%; height: 100vh; position: relative; }
+#videoBlock,#videoMessage {width: 100%; height: 100vh; position: absolute; top: 0; left: 0;}
+#videoMessage *{padding:0.4em; margin:1em; border-radius:1em; }
+#videoMessage {text-shadow: 2px 2px 2px #000000; color:white;z-index:99 }
 
 
 
