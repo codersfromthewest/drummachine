@@ -1,3 +1,14 @@
+/*DONT CHANGE THIS DOCUMENT*/
+/*DONT CHANGE THIS DOCUMENT*/
+/*DONT CHANGE THIS DOCUMENT*/
+/*DONT CHANGE THIS DOCUMENT*/
+/*DONT CHANGE THIS DOCUMENT*/
+/*DONT CHANGE THIS DOCUMENT*/
+/*DONT CHANGE THIS DOCUMENT*/
+/*DONT CHANGE THIS DOCUMENT*/
+
+
+/*home page css*/
 #aboutlink {
     color: white;
     width: 80px;
@@ -53,6 +64,42 @@ h1 {
     font-family: 'Rationale', sans-serif;
  }
 
- .kit_paragraph {
+/*about page css*/
+#main-container2 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("img/drum-background.jpg");
+    font-family:'Jura', sans-serif;
+    margin: 0px;
+}
 
+#title {
+
+}
+ #person-main-container {
+     display: inline-block;
  }
+.person-container {
+    width: 500px;
+    display: inline-block;
+    padding: 0px 50px;
+}
+
+.person-header {
+    font-size: 30px;
+}
+
+.person-image {
+    height: 100px; 
+    width: 100px;
+    border: 5px solid white;
+}
+
+.person-paragraph {
+    width: 300px;
+    display: inline-block;
+}
+#person-three {
+    width: 500px;
+    margin: 30px 300px;
+}
