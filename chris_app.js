@@ -14,10 +14,22 @@ window.addEventListener('keydown', keyHandler);
 function keyHandler (event) {
   for (var i = 0; i < keycode_letters.key_nums.length; i++) {
     if (event.keyCode === keycode_letters.key_nums[i]) {
-      var filepath = keycode_letters.key_sounds[i];
+
       var audio = document.getElementById(event.keyCode.toString());
-      audio.src = filepath;
-      audio.play();
+      var rotate = document.getElementsByClassName('record-div');
+      rotate[i].classList.toggle('spinning-div');
+      audio.src = key_sounds[i];
+      console.log('audio element selected', audio, audio.paused);
+      if(audio.paused) {
+        console.log('playing');
+        audio.play();
+      } else {
+        console.log('not playing');
+        audio.pause();
+      }
     }
   }
 }
+
+
+
