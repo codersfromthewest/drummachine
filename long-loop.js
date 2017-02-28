@@ -11,17 +11,15 @@ function keyHandler (event) {
 
       var audio = document.getElementById(event.keyCode.toString());
       var rotate = document.getElementsByClassName('record-div');
-
       rotate[i].classList.toggle('spinning-div');
       audio.src = key_sounds[i];
       console.log('audio element selected', audio, audio.paused);
-      if(audio.currentTime > 0) {
+      if(audio.paused) {
         console.log('playing');
-        audio.removeAttribute('loop', false);
+        audio.play();
       } else {
         console.log('not playing');
-        audio.play();
-        audio.setAttribute('controls', true);
+        audio.pause();
       }
     }
   }
