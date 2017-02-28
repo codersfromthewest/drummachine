@@ -1,19 +1,29 @@
 body {
-    font-family: 'Jura', sans-serif;
-    margin: 20px auto;
-    width: 95%;
+  padding-top: 5px;
+  font-family: 'Jura', sans-serif;
+  text-align: center;
+  margin: 0px auto;
+  width: 70%;
+  background-image: url("https://cdn.pixabay.com/photo/2013/07/13/12/07/record-159211_1280.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  animation: mySpin 100s infinite;
 }
 
+header {
+  float: right;
+}
 #audio-player {
-  width: 90%;
+  width: 80%;
   margin: 0px auto;
   text-align: center;
 }
 
 .play-div {
-    width: 20%;
-    height: 20%;
-    margin: .5% 4%;
+    width: 25%;
+    height: 25%;
+    margin: .3% .3%;
     display: inline-block;
     border-radius: 50%;
     text-align: center;
@@ -28,13 +38,8 @@ body {
   }
 }
 
-.record-div {
-   animation: mySpin 0s infinite;
-   overflow: auto;
-}
-
 .spinning-div {
-  animation: mySpin 30s infinite;
+  animation: mySpin 32s infinite;
 }
 
 .audio-element {
