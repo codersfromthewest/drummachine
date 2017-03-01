@@ -9,8 +9,8 @@
 <html>
     <head>
         <title>Drum Machine</title>
-        <link rel="stylesheet" type="text/css" href="reset.css"></link>
         <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Jura|Rationale" rel="stylesheet"></link>
+        <link rel="stylesheet" type="text/css" href="reset.css"></link>
         <link rel="stylesheet" type="text/css" href="main.css"></link>     
     </head>
     <body>
@@ -19,26 +19,33 @@
                 <p id="aboutlink">about</p>
             </header>
             <section ="title">
-                <h1>Welcome</h1>
+                <h1 id="header-message">Welcome</h1>
                 <p>pick your drum kit to get started</p>
+            <div id="form">
+                <form id="name-form">
+                    <input id="text-input" type="text">
+                    <button id="submit-button" type="submit" placeholder="What's your name?">Nice to meet you</button>
+                </form>
+            </div>
             </section>
             <section id="kits">
                 <div class="kit-container">
-                    <img class="kitimage" src="">
+                    <img class="kitimage" src="" name="drum-pad">
                     <h3 class="kit_title">Kit One</h3>
                     <p class="kit_paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, </p>
                 </div>
                 <div class="kit-container">
-                    <img class="kitimage" src="">
+                    <img class="kitimage" src="" name="sample-pad">
                     <h3 class="kit_title">Kit Two</h3>
                     <p class="kit_paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, </p>
                 </div>
                 <div class="kit-container">
-                    <img class="kitimage" src="">
+                    <img class="kitimage" src="img/nicky-icon.svg" name="loop-pad">
                     <h3 class="kit_title">Kit Three</h3>
                     <p class="kit_paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, </p>
                  </div>
             </section>
         </div>   
+    <script type="text/javascript" src="main.js"></script>
     </body>
 </html>

@@ -9,6 +9,10 @@
 
 
 /*home page css*/
+
+body {
+    overflow: hidden;
+}
 #aboutlink {
     color: white;
     width: 80px;
@@ -37,8 +41,28 @@ h1 {
     font-family: 'Rationale', sans-serif;
 }
 
+#form {
+    margin-top: 20px;
+}
+input {
+    height: 40px;
+    width: 190px;
+    line-height: 40px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+button {
+    height: 40px;
+    width: 70px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: rgba(130, 130, 130);
+}
+
 #kits {
     width: 100%;
+    margin-top: 0px;
     display: inline-block;
     
 }
@@ -73,9 +97,6 @@ h1 {
     margin: 0px;
 }
 
-#title {
-
-}
  #person-main-container {
      display: inline-block;
  }
