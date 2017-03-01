@@ -3,33 +3,44 @@ body {
   font-family: 'Jura', sans-serif;
   text-align: center;
   margin: 0px auto;
-  width: 70%;
+  width: 95%;
+  background-image: url("https://0.s3.envato.com/files/221061703/Concrete-Wall-Background-Textures-21.jpg");
+}
+
+#audio-player {
+  width: 95%;
+  height: 95%;
+  margin: 0px auto;
+  padding: 100px 0px;
   background-image: url("https://cdn.pixabay.com/photo/2013/07/13/12/07/record-159211_1280.png");
   background-size: 60%;
   background-repeat: no-repeat;
   background-position: center center;
-  animation: mySpin 100s infinite;
-}
-
-header {
-  float: right;
-}
-#audio-player {
-  width: 80%;
-  margin: 0px auto;
-  text-align: center;
+  animation: bigSpin 90s infinite;
 }
 
 .play-div {
-    width: 25%;
-    height: 25%;
-    margin: .3% .3%;
+    width: 16%;
+    height: 16%;
+    margin: .3% -.5%;
     display: inline-block;
-    border-radius: 50%;
-    text-align: center;
+}
+
+.record-div {
+  width: 90%;
+  height: 90%;
 }
 
 @keyframes mySpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes bigSpin {
   from {
     transform: rotate(0deg);
   }
@@ -42,14 +53,3 @@ header {
   animation: mySpin 32s infinite;
 }
 
-.audio-element {
-  width: 200px;
-  height: 200px;
-  margin: .5% 4%;
-  outline: 2px solid black;
-}
-
-.audio-element:hover {
-  background-color: blue;
-  cursor: grab;
-}
