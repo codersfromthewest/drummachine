@@ -3,30 +3,26 @@ body {
   font-family: 'Jura', sans-serif;
   text-align: center;
   margin: 0px auto;
-  width: 70%;
-  background-image: url("https://cdn.pixabay.com/photo/2013/07/13/12/07/record-159211_1280.png");
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  animation: mySpin 100s infinite;
+  width: 95%;
 }
 
-header {
-  float: right;
-}
 #audio-player {
-  width: 80%;
+  width: 70%;
+  height: 70%;
+
   margin: 0px auto;
-  text-align: center;
+  background-image: url("https://cdn.pixabay.com/photo/2013/07/13/12/07/record-159211_1280.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*animation: mySpin 100s infinite;*/
 }
 
 .play-div {
-    width: 25%;
-    height: 25%;
+    width: 15%;
+    height: 15%;
     margin: .3% .3%;
     display: inline-block;
-    border-radius: 50%;
-    text-align: center;
 }
 
 @keyframes mySpin {
@@ -42,14 +38,3 @@ header {
   animation: mySpin 32s infinite;
 }
 
-.audio-element {
-  width: 200px;
-  height: 200px;
-  margin: .5% 4%;
-  outline: 2px solid black;
-}
-
-.audio-element:hover {
-  background-color: blue;
-  cursor: grab;
-}
