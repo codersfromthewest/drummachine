@@ -4,17 +4,17 @@ body,html {
   font-family: 'Jura', sans-serif;
 
 }
-#video_element{
+/*#video_element{
     top:0em;
-}
+}*/
 .key {
-  z-index:40;
+  /*z-index:40;*/
   border: .4px solid black;
   border-radius: .5px;
   margin: 8px;
   font-size: 15px;
   padding: 1px .5px;
-  transition: all .07s ease;
+  /*transition: all .07s ease;*/
   width: 2px;
   text-align: center;
   color: white;
@@ -32,9 +32,9 @@ body,html {
 }*/
 
 #videoDiv {width: 100%; height: 100vh; position: relative; }
-#videoBlock,#videoMessage {width: 100%; height: 100vh; position: absolute; top: 0; left: 0;}
-#videoMessage *{padding:0.4em; margin:1em; border-radius:1em; }
-#videoMessage {text-shadow: 2px 2px 2px #000000; color:white;z-index:99 }
+#videoBlock,#videoMessage {width: 70%; height: 60vh; position: absolute; top: 0; left: 0;}
+  #videoMessage *{ border-radius:1em; }
+#videoMessage {padding:0.4em; margin:7em; text-shadow: 2px 2px 2px black; color:white;z-index:99 }
 
 
 
