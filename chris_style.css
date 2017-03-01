@@ -3,6 +3,10 @@ body {
     height: 100%;
     padding: 0px;
 }
+body {
+    font-family: 'Jura', sans-serif;
+}
+
 video {
     width: 100%;
     height: cover;
@@ -34,4 +38,27 @@ video {
     text-align: center;
     margin: 5px;
 
+}
+
+header {
+  position: fixed;
+  height: 100%;
+  right: 2%;
+  top: 0%;
+  border-left: 2px solid whitesmoke;
+  margin-left: 5%;
+  z-index: 100;
+}
+
+nav a {
+  display: block;
+  padding: 45% 0% 45% 20%;
+  text-decoration: none;
+  color: whitesmoke;
+  text-shadow: 1.5px 1.5px grey;
+  font-size: 25px;
+}
+
+#home {
+  padding-top: 50%;
 }

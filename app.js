@@ -19,7 +19,6 @@ function keyHandler (event) {
       var filepath = keycode_letters.key_sounds[i];
       audio.src = filepath;
       audio.play();
-      
     }
   }
 };
