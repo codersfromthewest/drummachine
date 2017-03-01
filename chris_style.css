@@ -17,27 +17,61 @@ video {
 #key-container {
     position: absolute;
     top: 300px;
-    left: 800px;
+    left: 600px;
     width: 400px;
-    border: 10px solid white;
+    border: 10px solid #77C9D4;
     text-align: center;
     border-radius: 30px;
 }
-#key-container h1 {
-    color: white;
-    font-size: 50px;
-    border: 5px solid white;
-}
+
 .key {
     height: 60px;
     width: 60px;
-    background-color: grey;
+    background-color: #57BC90;
+    display: inline-block;
+    border: 8px solid #77C9D4;
+    text-align: center;
+    margin: 5px;
+}
+
+.keytwo {
+    height: 60px;
+    width: 60px;
+    background-color: #57BC90;
     opacity: .9;
     display: inline-block;
     border: 8px solid white;
+    box-shadow: 2px 2px 5px 5px #015249;
     text-align: center;
     margin: 5px;
+}
 
+.keythree {
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    opacity: .9;
+    display: inline-block;
+    border: 8px solid #57BC90;
+    box-shadow: 2px 2px 5px 5px white;
+    text-align: center;
+    margin: 5px;
+}
+
+#heading-container {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    color: #77C9D4;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#heading-container h1 {
+    font-size: 70px;
+}
+#heading-container h3 {
+    font-size: 30px;
 }
 
 header {
@@ -62,3 +96,4 @@ nav a {
 #home {
   padding-top: 50%;
 }
+

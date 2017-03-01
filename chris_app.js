@@ -1,5 +1,6 @@
 'use strict';
 var key_arr = document.getElementsByClassName('key');
+var border = document.getElementById('key-container');
 var keycode_letters = {
   key_nums: [82, 84, 89, 85, 73, 79, 80, 65, 83, 68, 70, 71, 72, 74, 75, 76],//key codes
   key_letters: ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ';'],//array of keys
@@ -11,30 +12,36 @@ var keycode_letters = {
   , 'sounds/sound10.mp3'],//array of file names for sounds
 };
 
+//var rotate = document.getElementsByClassName('record-div');
+//rotate[i].classList.toggle('spinning-div');
 //adds a listener to the page that records keycodes and plays corresponding sounds + vids
 window.addEventListener('keydown', keyHandler);
 window.addEventListener('keyup', upHandler);
 
 function keyHandler (event) {
-  for (var i = 0; i < keycode_letters.key_nums.length; i++) {
-    key_arr[i].style.background = 'green';
-    if (event.keyCode === keycode_letters.key_nums[i]) {
-      var audio = document.getElementById(event.keyCode.toString());
-      console.log(audio);
-      var filepath = keycode_letters.key_sounds[i];
-      audio.src = filepath;
-      audio.play();
-      key_arr[i].style.background = 'blue';
+  if(keycode_letters.key_nums.includes(event.keyCode)){
+    for (var i = 0; i < keycode_letters.key_nums.length; i++) {
+      key_arr[i].classList.toggle('keytwo');
+      if (event.keyCode === keycode_letters.key_nums[i]) {
+        var audio = document.getElementById(event.keyCode.toString());
+        var filepath = keycode_letters.key_sounds[i];
+        audio.src = filepath;
+        audio.play();
+        key_arr[i].classList.toggle('keythree');
+        border.style.boxShadow = '2px 2px 5px 5px white';
+      }
     }
   }
 };
 
 function upHandler (event) {
-  console.log(event.keyCode);
-  for (var i = 0; i < keycode_letters.key_nums.length; i++) {
-    key_arr[i].style.background = 'grey';
-    if (event.keyCode === keycode_letters.key_nums[i]) {
-      key_arr[i].style.background = 'grey';
+  if(keycode_letters.key_nums.includes(event.keyCode)){
+    border.style.boxShadow = 'none';
+    for (var i = 0; i < keycode_letters.key_nums.length; i++) {
+      key_arr[i].classList.toggle('keytwo');
+      if (event.keyCode === keycode_letters.key_nums[i]) {
+        key_arr[i].classList.toggle('keythree');
+      }
     }
   }
 }

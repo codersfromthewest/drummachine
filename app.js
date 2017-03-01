@@ -6,7 +6,7 @@ var keycode_letters = {
   key_sounds: ['sounds/bass1.mp3', 'sounds/sound2.mp3', 'sounds/sound3.mp3'
   , 'sounds/sound4.mp3', 'sounds/sound5.mp3', 'sounds/sound6.mp3'
   , 'sounds/sound7.mp3', 'sounds/sound8.mp3', 'sounds/sound9.mp3'
-  , 'sounds/sound10.mp3'],//array of file names for sounds
+  , 'sounds/sound10.mp3','sounds/sound16.WAV','sounds/sound15.WAV','sounds/sound11.WAV','sounds/sound10.mp3','sounds/tremelo.mp3','sounds/taiko.mp3','sounds/sound15.WAV','sounds/sound15.WAV','sounds/sound10.mp3','sounds/sound15.WAV','sounds/sound15.WAV','sounds/sound15.WAV','sounds/sound15.WAV','sounds/sound15.WAV','sounds/sound15.WAV','sounds/sound15.WAV','sounds/sound15.WAV'],//array of file names for sounds
 };
 
 //adds a listener to the page that records keycodes and plays corresponding sounds + vids
