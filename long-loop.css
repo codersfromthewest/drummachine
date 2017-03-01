@@ -53,3 +53,24 @@ body {
   animation: mySpin 32s infinite;
 }
 
+header {
+  position: fixed;
+  height: 100%;
+  right: 2%;
+  top: 0%;
+  border-left: 2px solid whitesmoke;
+  margin-left: 5%;
+}
+
+nav a {
+  display: block;
+  padding: 45% 0% 45% 20%;
+  text-decoration: none;
+  color: whitesmoke;
+  text-shadow: 1.5px 1.5px grey;
+  font-size: 25px;
+}
+
+#home {
+  padding-top: 50%;
+}
