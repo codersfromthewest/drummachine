@@ -28,10 +28,10 @@ function clickHandler(event) {
     storage();
     console.log(localStorage.getItem('storedObjects'));
    //appends image
-    if(icon_box.childElementCount < 3){
+    if(icon_box.textContent === ''){
       var icon_image = document.createElement('img');
       icon_image.src = users[0].image_src;
-      icon_image.className = 'last_icon';
+      icon_image.id = 'last_icon';
       icon_box.appendChild(icon_image);
     }
   }
