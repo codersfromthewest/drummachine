@@ -14,10 +14,11 @@ body {
   display: block;
   width: 80%;
   margin: 1% auto 0% auto;
+  padding: .5%;
   color: whitesmoke;
-  text-shadow: 1.5px 1.5px grey;
+  text-shadow: 2px 2px steelblue;
   font-size: 1.5em;
-  background-color: rgba(130, 130, 130, .9);
+  background-color: rgba(61, 61, 61, .9);
   border-radius: 20px;
 }
 
@@ -25,17 +26,17 @@ body {
     width: 95%;
     height: 95%;
     margin: 0%;
-    padding: 8% 0%;
+    padding: 7.5% 0%;
     background-image: url(img/background-record.svg);
-    background-size: 61%;
+    background-size: 58%;
     background-repeat: no-repeat;
     background-position: center center;
     animation: bigSpin 90s infinite;
 }
 
 .play-div {
-    width: 16%;
-    height: 16%;
+    width: 15%;
+    height: 15%;
     margin: .3% -.5%;
     display: inline-block;
 }
