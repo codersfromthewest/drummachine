@@ -42,13 +42,16 @@ header {
 position: fixed;
 height: 100%;
 width: 11%;
-right: 2%;
+right: 0%;
 top: 0%;
 border-left: 2px solid whitesmoke;
-margin-left: 5%;
+padding-right: 2%;
 z-index: 100;
+background-color: rgba(130, 130, 130, .9);
 }
-
+li {
+  list-style-type:none;
+}
 nav a {
 display: block;
 margin: 20% 0%;
