@@ -47,3 +47,15 @@ function upHandler (event) {
 }
 
 //toggle method, class list
+
+//potential deleted
+
+var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+var audioElement = document.getElementById('68');
+var audioSrc = audioCtx.createMediaElementSource(audioElement);
+var analyser = audioCtx.createAnalyser();
+
+  // Bind our analyser to the media element source.
+audioSrc.connect(analyser);
+audioSrc.connect(audioCtx.destination);
