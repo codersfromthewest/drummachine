@@ -28,38 +28,41 @@ body,html {
   height:100px;
   float:left; 
 }
- /**{
-  font-size: 1.2em;
-  text-transform: ;
-  letter-spacing: .1em;
-  color: #ffc600;
-}*/
+ .foo{
+  background-color:royalblue;
+}
 
 #videoDiv {width: 100%; height: 100%; position: relative; }
-#videoBlock,#videoMessage {width: 100%; height: 100vh; position: absolute; top: 0; left: 0;}
+#videoBlock,#videoMessage {width: 100%;  position: absolute; top: 0; left: 0;}
   #videoMessage *{ border-radius:1em; }
-#videoMessage {width:60%; padding:0.4em; margin:7em; text-shadow: 2px 2px 2px black; color:white;z-index:99 }
+#videoMessage {width:60%; padding:0.4em; margin:5em; text-shadow: 2px 2px 2px black; color:white;z-index:99 }
 
 
 header {
-  position: fixed;
-  height: 100%;
-  right: 2%;
-  top: 0%;
-  border-left: 2px solid whitesmoke;
-  margin-left: 5%; 
-  z-index: 100;
+position: fixed;
+height: 100%;
+width: 11%;
+right: 2%;
+top: 0%;
+border-left: 2px solid whitesmoke;
+margin-left: 5%;
+z-index: 100;
 }
 
 nav a {
-  display: block;
-  padding: 45% 0% 45% 20%;
-  text-decoration: none;
-  color: whitesmoke;
-  text-shadow: 1.5px 1.5px grey;
-  font-size: 25px;
+display: block;
+margin: 20% 0%;
+padding: 25% 0% 25% 20%;
+text-decoration: none;
+color: whitesmoke;
+text-shadow: 1.5px 1.5px grey;
+font-size: 23px;
+}
+
+nav a:hover {
+text-shadow: 1.5px 1.5px mediumturquoise;
 }
 
 #home {
-  padding-top: 50%;
+padding-top: 50%;
 }

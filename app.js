@@ -17,7 +17,11 @@ function keyHandler (event) {
       var audio = document.getElementById(event.keyCode.toString());
       console.log(audio);
       var filepath = keycode_letters.key_sounds[i];
+      audio.onended = function() {
+    var element = document.getElementById('square' + event.keyCode.toString()).className = 'key';
+};
       audio.src = filepath;
+      var element = document.getElementById('square' + event.keyCode.toString()).className += ' foo' ;
       audio.play();
     }
   }
