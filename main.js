@@ -1,6 +1,6 @@
 'use strict';
 var users = [];
-var kitImage = document.getElementsByClassName('kitimage');
+var kitImageNode = document.getElementsByClassName('kitimage');
 var userForm = document.getElementById('name-form');
 var icon_box = document.getElementById('icon-container');
 var newUser;
@@ -12,34 +12,52 @@ function User(name) {
   this.image_src;
 }
 
-for(var i = 0; i < kitImage.length; i++) {
-  kitImage[i].addEventListener('click', clickHandler);
+for(var i = 0; i < kitImageNode.length; i++) {
+  kitImageNode[i].addEventListener('click', clickHandler);
 }
-function clickHandler(event) {
+
+function loadIcons() {
   if(localStorage.getItem('storedObjects') === null) {
+    return;
+  }
+  retrieve();
+  console.log('users before ', users);
+  if(icon_box.childElementCount < 3) {
+    var icon_image = document.createElement('img');
+    icon_image.src = users[0].image_src;
+    icon_image.className = 'last_icon';
+    icon_box.appendChild(icon_image);
+  }
+}
+
+loadIcons();
+
+function clickHandler(event) {
+  event.preventDefault();
+  if(localStorage.getItem('storedObjects') === null){
     alert('duuuddee, what\'s your name?');
   } else {
     retrieve();
+    storage();
     var chosenKit = event.target.name;
     var target_src = event.target.src;
-    console.log(chosenKit);
     users[0].lastKit = chosenKit;
     users[0].image_src = target_src;
     storage();
-    console.log(localStorage.getItem('storedObjects'));
    //appends image
-    if(icon_box.childElementCount < 3){
+    storage();
+    if(icon_box.childElementCount < 3) {
       var icon_image = document.createElement('img');
       icon_image.src = users[0].image_src;
       icon_image.className = 'last_icon';
       icon_box.appendChild(icon_image);
     }
   }
+  window.location.href = event.target.dataset.link;
 }
 
 if(localStorage.getItem('storedObjects') === null) {
-
-  //makes an listner for the form to store new object
+  //makes an listener for the form to store new object
   userForm.addEventListener('submit', submitHandler);
   function submitHandler(event) {
     event.preventDefault();
@@ -55,9 +73,8 @@ if(localStorage.getItem('storedObjects') === null) {
     console.log(newUser);
     var headerMessage = document.getElementById('header-message');
     headerMessage.textContent = 'Welcome, ' + userName;
+    storage();
   }
-
-
 } else {
 
   retrieve();
@@ -68,7 +85,7 @@ if(localStorage.getItem('storedObjects') === null) {
 
   // adds name to header
   var headerMessage = document.getElementById('header-message');
-  headerMessage.textContent = 'Welcome, ' + users[0].name;;
+  headerMessage.textContent = 'Welcome, ' + users[0].name;
 }
 
 
@@ -81,5 +98,4 @@ function retrieve () {
   var storedObjects = localStorage.getItem('storedObjects');
   storedObjects = JSON.parse(storedObjects);
   users = storedObjects;
-
 }
