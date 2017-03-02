@@ -3,6 +3,8 @@
 <head>
 
   <title>Drum Machine</title>
+  <link rel="stylesheet" href="reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Jura|Rationale" rel="stylesheet"></link>
   <link rel="stylesheet" href="style.css">
 <script src="app.js"></script>
 </head>
@@ -30,109 +32,115 @@
   <div id ="videoBlock">
     <video id="video_element" preload="auto" autoplay="true" loop="loop" src="videos/wild_purple_flowers.mp4" type="video/mp4"></video>
     <div id="videoMessage">
-      <div id="square81" class="key">
-        <kbd>Q</kbd>
-        <span class="sound"></span>
+      <div id="topRow">
+          <div id="square81" class="key">
+            <kbd>Q</kbd>
+            <span class="sound"></span>
+          </div>
+          <div id="square87"class="key">
+            <kbd>W</kbd>
+            <span class="sound">wo</span>
+          </div>
+          <div id="square69" class="key">
+            <kbd>E</kbd>
+            <span class="sound">e</span>
+          </div>
+          <div id="square82" class="key">
+            <kbd>R</kbd>
+            <span class="sound">e</span>
+          </div>
+          <div id="square84" class="key">
+            <kbd>T</kbd>
+            <span class="sound"></spana>
+          </div>
+          <div id="square89" class="key">
+            <kbd>Y</kbd>
+            <span class="sound"></span>
+          </div>
+          <div id="square85" class="key">
+            <kbd>U</kbd>
+            <span class="sound"></span>
+          </div>
+          <div id="square73" class="key">
+            <kbd>I</kbd>
+            <span class="sound"></span>
+          </div>
+          <div id="square79" class="key">
+            <kbd>O</kbd>
+            <span class="sound"></span>
+          </div>
+          <div id="square80" class="key" >
+            <kbd>P</kbd>
+            <span class="sound"></span>
+          </div>
+        </div>
+      <div id="second-row">
+        <div id="square65" class="key">
+          <kbd>A</kbd>
+          <span class="sound"></span> 
+        </div>
+        <div id="square83" class="key">
+          <kbd>S</kbd>
+          <span class="sound"></span>
+        </div>
+        <div id="square68" class="key">
+          <kbd>D</kbd>
+          <span class="sound"></span>
+        </div>
+        <div id="square70" class="key">
+          <kbd>F</kbd>
+          <span class="sound">openhat</span>
+        </div>
+        <div id="square71" class="key">
+          <kbd>G</kbd>
+          <span class="sound">boom</span>
+        </div>
+        <div id="square72" class="key">
+          <kbd>H</kbd>
+          <span class="sound">ride</span>
+        </div>
+        <div id="square74" class="key">
+          <kbd>J</kbd>
+          <span class="sound">snare</span>
+        </div>
+        <div id="square75" class="key">
+          <kbd>K</kbd>
+          <span class="sound">tom</span>a
+        </div>
+        <div id="square76" class="key">
+          <kbd>L</kbd>
+          <span class="sound">tink</span>
+        </div>
       </div>
-      <div class="key">
-        <kbd>W</kbd>
-        <span class="sound">wo</span>
-      </div>
-      <div class="key">
-        <kbd>E</kbd>
-        <span class="sound"></span>
-      </div>
-      <div class="key">
-        <kbd>R</kbd>
-        <span class="sound"></span>
-      </div>
-      <div class="key">
-        <kbd>T</kbd>
-        <span class="sound"></spana>
-      </div>
-      <div class="key">
-        <kbd>Y</kbd>
-        <span class="sound"></span>
-      </div>
-      <div class="key">
-        <kbd>U</kbd>
-        <span class="sound"></span>
-      </div>
-      <div class="key">
-        <kbd>I</kbd>
-        <span class="sound"></span>
-      </div>
-      <div class="key">
-        <kbd>O</kbd>
-        <span class="sound"></span>
-      </div>
-      <div class="key" >
-        <kbd>P</kbd>
-        <span class="sound"></span>
-      </div>
-      <div id="square65" class="key">
-        <kbd>A</kbd>
-        <span class="sound"></span> 
-      </div>
-      <div class="key">
-        <kbd>S</kbd>
-        <span class="sound"></span>
-      </div>
-      <div class="key">
-        <kbd>D</kbd>
-        <span class="sound"></span>
-      </div>
-      <div class="key">
-        <kbd>F</kbd>
-        <span class="sound">openhat</span>
-      </div>
-      <div class="key">
-        <kbd>G</kbd>
-        <span class="sound">boom</span>
-      </div>
-      <div class="key">
-        <kbd>H</kbd>
-        <span class="sound">ride</span>
-      </div>
-      <div class="key">
-        <kbd>J</kbd>
-        <span class="sound">snare</span>
-      </div>
-      <div class="key">
-        <kbd>K</kbd>
-        <span class="sound">tom</span>a
-      </div>
-      <div class="key">
-        <kbd>L</kbd>
-        <span class="sound">tink</span>
-      </div>
-      <div class="key">
-        <kbd>Z</kbd>
-        <span class="sound">tink</span>
-      </div>
-      <div class="key">
-        <kbd>X</kbd>
-        <span class="sound">tink</span>
-      </div>
-      <div class="key">
-        <kbd>C</kbd>
-        <span class="sound">tom</span>a
-      </div>
-      <div class="key">
-        <kbd>V</kbd>
-        <span class="sound">tink</span>
-      </div>
-      <div class="key b">
-        <kbd>B</kbd>
-        <span class="sound">tink</span>
-      </div>
-      <div class="key">
-        <kbd>N</kbd>
-        <span class="sound">tink</span>
-      </div>
-      <div class="key">
-        <kbd>M</kbd>
-        <span class="sound">tink</span>
+      <div id="third-row">
+        <div id="square90" class="key">
+          <kbd>Z</kbd>
+          <span class="sound">tink</span>
+        </div>
+        <div id="square88" class="key">
+          <kbd>X</kbd>
+          <span class="sound">tink</span>
+        </div>
+        <div id="square67" class="key">
+          <kbd>C</kbd>
+          <span class="sound">tom</span>a
+        </div>
+        <div id="square86" class="key">
+          <kbd>V</kbd>
+          <span class="sound">tink</span>
+        </div>
+        <div id="square66" class="key">
+          <kbd>B</kbd>
+          <span class="sound">tink</span>
+        </div>
+        <div id="square78" class="key">
+          <kbd>N</kbd>
+          <span class="sound">tink</span>
+        </div>
+        <div id="square77" class="key">
+          <kbd>M</kbd>
+          <span class="sound">tink</span>
+        </div>
       </div>
   </div>
   </div>
