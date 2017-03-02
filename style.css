@@ -3,21 +3,17 @@ body,html {
   padding: 0;
   font-family: 'Jura', sans-serif;
 }
-/*#video_element{
-    top:0em;
-}*/
+
 #video_element{
     width: 100%; 
     height: 120%;   
 }
 
 .key {
-  /*z-index:40;*/
   border: 5px solid black;
   border-radius: .5px;
   margin: .1%;
   font-size: 15px;
-  /*transition: all .07s ease;*/
   text-align: center;
   color: white;
   background: rgba(100,200,50,0.4);
@@ -28,10 +24,23 @@ body,html {
   background-color:royalblue;
 }
 
-#videoDiv {width: 100%; height: 100%; position: relative; }
-#videoBlock,#videoMessage {width: 100%;  position: absolute; top: 0; left: 0;}
-  #videoMessage *{ border-radius:1em; }
-#videoMessage {width:90%; margin:8% .5% 0% 3%; text-shadow: 2px 2px 2px black; color:white;z-index:99 }
+#videoDiv {
+  width: 100%; 
+  height: 100%; 
+  position: relative; 
+  }
+#videoBlock,#videoMessage {
+  width: 100%;  
+  position: absolute; top: 0; 
+  left: 0;}
+  #videoMessage *{ 
+    border-radius:1em; }
+#videoMessage {
+  width:90%; 
+  margin:8% .5% 0% 3%; 
+  text-shadow: 2px 2px 2px black; 
+  color:white;
+  z-index:99 }
 
 #topRow {
     margin: 0% 1%;
