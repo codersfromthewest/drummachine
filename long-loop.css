@@ -3,22 +3,34 @@ body {
   padding-top: 5px;
   font-family: 'Jura', sans-serif;
   text-align: center;
-  margin: 0px auto;
-  width: 95%;
-  background-image: url("img/rough-texture.png");
+  margin: 0px 0px 0px 0px;
+  padding-right: 67%;
+  width: 88%;
+  background-image: url(img/rough-texture.png);
   overflow: hidden;
 }
 
+#instructions {
+  display: block;
+  width: 80%;
+  margin: 1% auto 0% auto;
+  color: whitesmoke;
+  text-shadow: 1.5px 1.5px grey;
+  font-size: 1.5em;
+  background-color: rgba(130, 130, 130, .9);
+  border-radius: 20px;
+}
+
 #audio-player {
-  width: 95%;
-  height: 95%;
-  margin: 0px auto;
-  padding: 100px 0px;
-  background-image: url("https://cdn.pixabay.com/photo/2013/07/13/12/07/record-159211_1280.png");
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  animation: bigSpin 90s infinite;
+    width: 95%;
+    height: 95%;
+    margin: 0%;
+    padding: 8% 0%;
+    background-image: url(img/background-record.svg);
+    background-size: 61%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: bigSpin 90s infinite;
 }
 
 .play-div {
