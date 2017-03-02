@@ -4,10 +4,10 @@ var border = document.getElementById('key-container');
 var keycode_letters = {
   key_nums: [82, 84, 89, 85, 73, 79, 80, 65, 83, 68, 70, 71, 72, 74, 75, 76],//key codes
   key_letters: ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ';'],//array of keys
-  key_sounds: ['sounds/bass1.mp3', 'sounds/sound2.mp3', 'sounds/sound3.mp3'
+  key_sounds: ['sounds/lastsound.mp3', 'sounds/sound2.mp3', 'sounds/sound3.mp3'
   , 'sounds/sound4.mp3', 'sounds/sound5.mp3', 'sounds/sound6.mp3'
   , 'sounds/sound7.mp3', 'sounds/sound8.mp3', 'sounds/sound9.mp3'
-  , 'sounds/sound4.mp3', 'sounds/sound5.mp3', 'sounds/sound6.mp3'
+  , 'sounds/last_sound2.mp3', 'sounds/sound5.mp3', 'sounds/sound6.mp3'
   , 'sounds/sound4.mp3', 'sounds/sound5.mp3', 'sounds/sound6.mp3'
   , 'sounds/sound10.mp3'],//array of file names for sounds
 };
@@ -47,15 +47,3 @@ function upHandler (event) {
 }
 
 //toggle method, class list
-
-//potential deleted
-
-var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-
-var audioElement = document.getElementById('68');
-var audioSrc = audioCtx.createMediaElementSource(audioElement);
-var analyser = audioCtx.createAnalyser();
-
-  // Bind our analyser to the media element source.
-audioSrc.connect(analyser);
-audioSrc.connect(audioCtx.destination);
