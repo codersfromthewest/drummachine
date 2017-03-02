@@ -8,35 +8,63 @@ body,html {
 }*/
 #video_element{
     width: 100%; 
-    height:120% ;   
+    height: 120%;   
 }
 
 .key {
   /*z-index:40;*/
   border: 5px solid black;
   border-radius: .5px;
-  margin: 8px;
+  margin: .1%;
   font-size: 15px;
-  padding: 1px .5px;
   /*transition: all .07s ease;*/
-  width: 2px;
   text-align: center;
   color: white;
   background: rgba(100,200,50,0.4);
-  text-shadow: 0 0 .5px black;
-  width:80px;
-  height:100px;
   float:left; 
-}
- .foo{
+  }
+
+ .foo {
   background-color:royalblue;
 }
 
 #videoDiv {width: 100%; height: 100%; position: relative; }
 #videoBlock,#videoMessage {width: 100%;  position: absolute; top: 0; left: 0;}
   #videoMessage *{ border-radius:1em; }
-#videoMessage {width:60%; padding:0.4em; margin:5em; text-shadow: 2px 2px 2px black; color:white;z-index:99 }
+#videoMessage {width:90%; margin:8% .5% 0% 3%; text-shadow: 2px 2px 2px black; color:white;z-index:99 }
 
+#topRow {
+    margin: 0% 1%;
+    height: 130px;
+    clear: both;
+}
+
+#topRow .key {
+  width: 7.75%;
+  height: 85%;
+}
+
+#second-row {
+  margin: 0% 2% 0% 6.5%;
+  height: 130px;
+  clear: both;
+}
+
+#second-row .key {
+  width: 8%;
+  height: 85%;
+}
+
+#third-row {
+  margin: 0% 2% 0% 14%;
+  height: 130px;
+  clear: both;
+}
+
+#third-row .key {
+  width: 9%;
+  height: 85%;
+}
 
 header {
 position: fixed;
@@ -49,9 +77,7 @@ padding-right: 2%;
 z-index: 100;
 background-color: rgba(130, 130, 130, .9);
 }
-li {
-  list-style-type:none;
-}
+
 nav a {
 display: block;
 margin: 20% 0%;
