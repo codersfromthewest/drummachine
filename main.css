@@ -60,7 +60,7 @@ a:hover {
 
 section {
     color: white;
-    width: 350px;
+    width: 40%;
     margin: 0px auto 20px auto;
     text-align: center;
 }
@@ -72,22 +72,38 @@ h1 {
 
 #form {
     margin-top: 20px;
+    width: 100%;
 }
 
 input {
-    height: 40px;
+    height: 50px;
     width: 190px;
     line-height: 40px;
     font-size: 25px;
     border-radius: 10px;
+    margin-top: 0px;
 }
 
-button {
-    height: 40px;
-    width: 70px;
+#submit-button {
     margin-left: 10px;
-    border-radius: 10px;
-    background-color: rgba(130, 130, 130);
+    margin-top: 0px;
+    height: 55px;
+    color: #fff;
+    font-size: 16px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px slategray;
+}
+
+#submit-button:hover{
+    background-color: darkgray; 
+}
+
+#submit-button:active {
+    background-color: lightseagreen;
+    box-shadow: 0 2px slategray;
+    transform: translateY(5px);
 }
 
 #kits {

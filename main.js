@@ -3,6 +3,7 @@ var users = [];
 var kitImageNode = document.getElementsByClassName('kitimage');
 var userForm = document.getElementById('name-form');
 var icon_box = document.getElementById('icon-container');
+var headerText = document.getElementById('header');
 var newUser;
 
 console.log(localStorage.getItem('storedObjects'));
@@ -22,12 +23,13 @@ function loadIcons() {
   }
   retrieve();
   console.log('users before ', users);
-  if(icon_box.childElementCount < 3) {
-    var icon_image = document.createElement('img');
-    icon_image.src = users[0].image_src;
-    icon_image.className = 'last_icon';
-    icon_box.appendChild(icon_image);
-  }
+  var icon_image = document.createElement('img');
+  var lastTimeHeader = document.createElement('h3');
+  icon_image.src = users[0].image_src;
+  icon_image.className = 'last_icon';
+  icon_box.appendChild(icon_image);
+  lastTimeHeader.textContent = 'Last time you chose:';
+  headerText.insertBefore(lastTimeHeader, headerText.childNodes[0]);
 }
 
 loadIcons();
@@ -38,22 +40,21 @@ function clickHandler(event) {
     alert('duuuddee, what\'s your name?');
   } else {
     retrieve();
-    storage();
     var chosenKit = event.target.name;
     var target_src = event.target.src;
     users[0].lastKit = chosenKit;
     users[0].image_src = target_src;
     storage();
    //appends image
-    storage();
-    if(icon_box.childElementCount < 3) {
-      var icon_image = document.createElement('img');
-      icon_image.src = users[0].image_src;
-      icon_image.className = 'last_icon';
-      icon_box.appendChild(icon_image);
-    }
+    var icon_image = document.createElement('img');
+    var lastTimeHeader = document.createElement('h3');
+    icon_image.src = users[0].image_src;
+    icon_image.className = 'last_icon';
+    icon_box.appendChild(icon_image);
+    lastTimeHeader.textContent = 'Last time you chose:';
+    headerText.insertBefore(lastTimeHeader, headerText.childNodes[0]);
+    window.location.href = event.target.dataset.link;
   }
-  window.location.href = event.target.dataset.link;
 }
 
 if(localStorage.getItem('storedObjects') === null) {
