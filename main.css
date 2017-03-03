@@ -11,7 +11,7 @@
 /*home page css*/
 
 body {
-    overflow: hidden;
+    overflow: auto;
     height: 1300px;
 }
 
@@ -55,6 +55,7 @@ a:hover {
     height: 1200px;
     background-image: url("img/drum-background.jpg");
     background-size: 100%;
+    background-repeat: repeat;
     font-family:'Jura', sans-serif;
 }
 
@@ -124,6 +125,9 @@ input {
     margin: 0px 20px;
 }
 
+.kit-container p {
+    height: 300px;
+}
 .kitimage {
     height: 175px;
     width: 175px;
@@ -143,21 +147,38 @@ input {
 #about-link {
     color: white;
 }
+
 #main-container2 {
     height: 100vh;
     width: 100%;
     background-image: url("img/drum-background.jpg");
+    background-position: top center;
+    background-repeat: repeat;
     font-family:'Jura', sans-serif;
     margin: 0px;
 }
 
+#title {
+    text-align: center;
+    width: 40%;
+    display: block;
+    margin: 0% auto;
+    color: ghostwhite;
+}
+
+#title h1 {
+    padding-bottom: 2%;
+}
+
  #person-main-container {
-     display: inline-block;
+     width: 90%;
+     margin: 2% auto;
+     display: block;
+     text-align: center;
  }
 .person-container {
-    width: 500px;
+    width: 30%;
     display: inline-block;
-    padding: 0px 50px;
 }
 
 .person-header {
@@ -165,18 +186,14 @@ input {
 }
 
 .person-image {
-    height: 100px; 
-    width: 100px;
+    width: 80%;
     border: 5px solid white;
+    border-radius: 30%;
 }
 
 .person-paragraph {
-    width: 300px;
+    width: 80%;
     display: inline-block;
-}
-#person-three {
-    width: 500px;
-    margin: 30px 300px;
 }
 
 #icon-container {
