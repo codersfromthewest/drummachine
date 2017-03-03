@@ -3,10 +3,10 @@
 var keycode_letters = {
   key_nums: [81,87,69,82,84,89,85,73,79,80,65, 83, 68, 70, 71, 72, 74, 75, 76,90,88,67,86,66,78,77,],//key codes
   key_letters: ['Q','W','E','R','T','Y','U','I','P','A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L','Z','X','C','V','B','N','M'],//array of keys
-  key_sounds: ['sounds/bass1.mp3', 'sounds/sound2.mp3', 'sounds/sound3.mp3'
-  , 'sounds/sound4.mp3', 'sounds/sound5.mp3', 'sounds/sound6.mp3'
-  , 'sounds/sound7.mp3', 'sounds/sound8.mp3', 'sounds/sound9.mp3'
-  , 'sounds/sound10.mp3','sounds/sound16.WAV','sounds/sound15.WAV','sounds/sound11.WAV','sounds/sound10.mp3','sounds/tremelo.mp3','sounds/taiko.mp3','sounds/sound15.WAV','sounds/sound15.WAV','sounds/sound10.mp3','sounds/sound15.WAV','sounds/sound15.WAV','sounds/sound15.WAV','sounds/sound15.WAV','sounds/sound15.WAV','sounds/sound15.WAV','sounds/sound15.WAV','sounds/sound15.WAV'],//array of file names for sounds
+  key_sounds: ['sounds/darius_sounds/clip1.mp3', 'sounds/darius_sounds/clip2.mp3', 'sounds/darius_sounds/clip3.mp3'
+  , 'sounds/darius_sounds/clip4.mp3', 'sounds/darius_sounds/clip5.mp3', 'sounds/darius_sounds/clip6.mp3'
+  , 'sounds/darius_sounds/clip7.mp3', 'sounds/darius_sounds/clip8.mp3', 'sounds/darius_sounds/clip9.mp3'
+  , 'sounds/darius_sounds/clip10.mp3','sounds/darius_sounds/clip11.mp3','sounds/darius_sounds/clip12.mp3','sounds/darius_sounds/clip13.mp3','sounds/darius_sounds/clip14.mp3','sounds/darius_sounds/clip15.mp3','sounds/darius_sounds/clip16.mp3','sounds/darius_sounds/clip17.mp3','sounds/darius_sounds/clip18.mp3','sounds/darius_sounds/clip20.mp3','sounds/darius_sounds/clip21.mp3','sounds/darius_sounds/clip22.mp3','sounds/birds.mp3','sounds/tremelo.mp3','sounds/sound15.WAV','sounds/sound15.WAV','sounds/sound15.WAV','sounds/sound15.WAV'],//array of file names for sounds
 };
 
 //adds a listener to the page that records keycodes and plays corresponding sounds + vids
