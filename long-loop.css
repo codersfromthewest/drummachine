@@ -12,7 +12,7 @@ body {
 
 #instructions {
   display: block;
-  width: 80%;
+  width: 70%;
   margin: 1% auto 0% auto;
   padding: .5%;
   color: whitesmoke;
@@ -65,7 +65,7 @@ body {
 }
 
 .spinning-div {
-  animation: mySpin 32s infinite;
+  animation: mySpin 30s infinite;
 }
 
 header {

@@ -1,7 +1,7 @@
 'use strict';
 var key_nums = [65, 83, 68, 70, 71, 72, 74, 75, 76];//key codes
 // var key_letters = ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ';']; //array of keys
-var key_sounds = ['sounds/bass1.mp3', 'sounds/birds.mp3', 'sounds/drumloop-1.mp3', 'sounds/dubstep-drums1.mp3', 'sounds/hip-hop-drums1.mp3', 'sounds/jazz.mp3', 'sounds/marley.mp3', 'sounds/taiko.mp3', 'sounds/tremelo.mp3'];
+var key_sounds = ['sounds/roads.mp3', 'sounds/clicks.mp3', 'sounds/kick.mp3', 'sounds/marley2.mp3', 'sounds/claps.mp3', 'sounds/marley1.mp3', 'sounds/hihat.mp3', 'sounds/horns.mp3', 'sounds/subbass.mp3'];
 
 window.addEventListener('keydown', keyHandler);
 
