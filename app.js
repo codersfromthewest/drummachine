@@ -6,7 +6,7 @@ var keycode_letters = {
   key_sounds: ['sounds/darius_sounds/clip1.mp3', 'sounds/darius_sounds/clip2.mp3', 'sounds/darius_sounds/clip3.mp3'
   , 'sounds/darius_sounds/clip4.mp3', 'sounds/darius_sounds/clip5.mp3', 'sounds/darius_sounds/clip6.mp3'
   , 'sounds/darius_sounds/clip7.mp3', 'sounds/darius_sounds/clip8.mp3', 'sounds/darius_sounds/clip9.mp3'
-  , 'sounds/darius_sounds/clip10.mp3','sounds/darius_sounds/clip11.mp3','sounds/darius_sounds/clip12.mp3','sounds/darius_sounds/clip13.mp3','sounds/darius_sounds/clip14.mp3','sounds/darius_sounds/clip15.mp3','sounds/darius_sounds/clip16.mp3','sounds/darius_sounds/clip17.mp3','sounds/darius_sounds/clip18.mp3','sounds/darius_sounds/clip20.mp3','sounds/darius_sounds/clip21.mp3','sounds/darius_sounds/clip22.mp3','sounds/birds.mp3','sounds/tremelo.mp3','sounds/sound15.WAV','sounds/sound15.WAV','sounds/sound15.WAV','sounds/sound15.WAV'],//array of file names for sounds
+  , 'sounds/darius_sounds/clip10.mp3','sounds/darius_sounds/clip11.mp3','sounds/darius_sounds/clip12.mp3','sounds/darius_sounds/clip13.mp3','sounds/darius_sounds/clip14.mp3','sounds/darius_sounds/clip15.mp3','sounds/darius_sounds/clip16.mp3','sounds/darius_sounds/clip17.mp3','sounds/darius_sounds/clip18.mp3','sounds/darius_sounds/clip20.mp3','sounds/darius_sounds/clip21.mp3','sounds/darius_sounds/clip22.mp3','sounds/darius_sounds/pop.mp3','sounds/darius_sounds/rrr.mp3','sounds/darius_sounds/ooo.mp3','sounds/darius_sounds/Simmons ClapTrap-13.mp3','sounds/darius_sounds/ppp.mp3',],//array of file names for sounds
 };
 
 //adds a listener to the page that records keycodes and plays corresponding sounds + vids
