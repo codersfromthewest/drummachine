@@ -114,8 +114,7 @@ input {
 }
 
 .kitimage:hover {
-    
-    z-index: 10;
+    box-shadow: 0px 0px 5px 5px darkcyan;
 }
 
 #drum-pad img {
