@@ -1,7 +1,7 @@
 'use strict';
 var key_nums = [65, 83, 68, 70, 71, 72, 74, 75, 76];//key codes
 // var key_letters = ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ';']; //array of keys
-var key_sounds = ['sounds/roads.mp3', 'sounds/clicks.mp3', 'sounds/kick.mp3', 'sounds/marley2.mp3', 'sounds/claps.mp3', 'sounds/marley1.mp3', 'sounds/hihat.mp3', 'sounds/horns.mp3', 'sounds/subbass.mp3'];
+var key_sounds = ['sounds/nicky/roads.mp3', 'sounds/nicky/clicks.mp3', 'sounds/nicky/kick.mp3', 'sounds/nicky/marley2.mp3', 'sounds/nicky/claps.mp3', 'sounds/nicky/marley1.mp3', 'sounds/nicky/hihat.mp3', 'sounds/nicky/horn.mp3', 'sounds/nicky/subbass.mp3'];
 
 window.addEventListener('keydown', keyHandler);
 
