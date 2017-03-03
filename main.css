@@ -55,7 +55,7 @@ a:hover {
     height: 1200px;
     background-image: url("img/drum-background.jpg");
     background-size: 100%;
-    background-repeat: repeat;
+    background-repeat: repeat-y;
     font-family:'Jura', sans-serif;
 }
 
@@ -111,12 +111,23 @@ input {
 #kits {
     width: 100%;
     margin-top: 0px;
-    display: inline-block;
 }
 
 .kitimage:hover {
     
     z-index: 10;
+}
+
+#drum-pad img {
+    margin-top: -10px;
+}
+
+#sample-pad p {
+    margin-top: 30px;
+}
+
+#loop-pad p {
+    margin-top: 45px;
 }
 
 .kit-container {
@@ -128,6 +139,7 @@ input {
 .kit-container p {
     height: 300px;
 }
+
 .kitimage {
     height: 175px;
     width: 175px;
@@ -149,11 +161,11 @@ input {
 }
 
 #main-container2 {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-image: url("img/drum-background.jpg");
     background-position: top center;
-    background-repeat: repeat;
+    background-repeat: repeat-y;
     font-family:'Jura', sans-serif;
     margin: 0px;
 }
@@ -176,9 +188,14 @@ input {
      display: block;
      text-align: center;
  }
+
 .person-container {
     width: 30%;
     display: inline-block;
+}
+
+.person-container p {
+    height: 150px;
 }
 
 .person-header {
@@ -187,11 +204,18 @@ input {
 
 .person-image {
     width: 80%;
+    height: 250px;
     border: 5px solid white;
     border-radius: 30%;
+    margin: 3%;
+}
+
+#chris p {
+    margin-top: 8px;
 }
 
 .person-paragraph {
+    height: 150px;
     width: 80%;
     display: inline-block;
 }
