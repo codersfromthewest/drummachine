@@ -65,6 +65,7 @@ if(localStorage.getItem('storedObjects') === null) {
     var nameNode = document.getElementById('text-input');
     var userName = nameNode.value;
 
+    document.getElementById('kits').style.marginTop = '158px';
     var formParent = document.getElementById('form');
     var formChildren = document.getElementById('name-form', 'text-input', 'submit-button');
     formParent.removeChild(formChildren);
