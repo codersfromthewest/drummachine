@@ -23,13 +23,13 @@ function loadIcons() {
   }
   retrieve();
   console.log('users before ', users);
-  var icon_image = document.createElement('img');
   var lastTimeHeader = document.createElement('h3');
+  var icon_image = document.createElement('img');
   icon_image.src = users[0].image_src;
   icon_image.className = 'last_icon';
-  icon_box.appendChild(icon_image);
   lastTimeHeader.textContent = 'Last time you chose:';
-  headerText.insertBefore(lastTimeHeader, headerText.childNodes[0]);
+  icon_box.appendChild(lastTimeHeader);
+  icon_box.appendChild(icon_image);
 }
 
 loadIcons();
@@ -65,6 +65,7 @@ if(localStorage.getItem('storedObjects') === null) {
     var nameNode = document.getElementById('text-input');
     var userName = nameNode.value;
 
+    document.getElementById('kits').style.marginTop = '158px';
     var formParent = document.getElementById('form');
     var formChildren = document.getElementById('name-form', 'text-input', 'submit-button');
     formParent.removeChild(formChildren);

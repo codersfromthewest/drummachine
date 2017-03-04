@@ -11,6 +11,7 @@
 /*home page css*/
 
 body {
+    color: whitesmoke;
     overflow: auto;
     height: 1300px;
 }
@@ -21,26 +22,27 @@ body {
 }
 
 header {
-    margin: 0% 0% 0% 80%;
+    display: block;
+    float: right;
     width: 20%;
-    padding: 3% 0% 1% 0%;
+    padding: 2% 0% 1% 0%;
     border-radius: 10px;
 }
 
 header h3 {
     color: white;
+    width: 400px;
     font-size: 25px;
     text-decoration: none;
     text-shadow: 1.5px 1.5px grey;
-
 }
 
 header a {
-      color: white;
+    color: white;
     font-size: 25px;
     text-decoration: none;
     text-shadow: 1.5px 1.5px grey;
-    margin-left: 60%;
+    margin-left: 71%;
     margin-top: 60%;
 }
 
@@ -48,9 +50,7 @@ a:hover {
     text-shadow: 1.5px 1.5px mediumturquoise;
 }
 
-
 #main-container {
-    /*height: 100vh;*/
     width: 100%;
     height: 1200px;
     background-image: url("img/drum-background.jpg");
@@ -59,20 +59,14 @@ a:hover {
     font-family:'Jura', sans-serif;
 }
 
-section {
-    color: white;
-    width: 40%;
-    margin: 0px auto 20px auto;
-    text-align: center;
-}
-
 h1 {
     font-size: 70px;
     font-family: 'Rationale', sans-serif;
+    padding-top: 10%;
 }
 
 #form {
-    margin-top: 20px;
+    margin-top: 40px;
     width: 100%;
 }
 
@@ -110,33 +104,17 @@ input {
 
 #kits {
     width: 100%;
-    margin-top: 0px;
-}
-
-.kitimage:hover {
-    box-shadow: 0px 0px 5px 5px darkcyan;
-}
-
-#drum-pad img {
-    margin-top: -10px;
-}
-
-#sample-pad p {
-    margin-top: 30px;
-}
-
-#loop-pad p {
-    margin-top: 45px;
+    height: 500px;
+    color: white;
+    margin: 50px auto 20px auto;
+    text-align: center;
 }
 
 .kit-container {
     display: inline-block;
-    width: 250px;
+    height: 400px;
+    width: 29%;
     margin: 0px 20px;
-}
-
-.kit-container p {
-    height: 300px;
 }
 
 .kitimage {
@@ -147,12 +125,16 @@ input {
     border-radius: 100%;
  }
 
- .kit_title {
+.kitimage:hover {
+    box-shadow: 0px 0px 5px 5px darkcyan;
+}
+
+.kit_title {
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 10px;
     font-family: 'Rationale', sans-serif;
- }
+}
 
 /*about page css*/
 #about-link {
@@ -174,6 +156,8 @@ input {
     width: 40%;
     display: block;
     margin: 0% auto;
+    margin-bottom: 60px;
+    padding-top: 3%;
     color: ghostwhite;
 }
 
@@ -219,12 +203,20 @@ input {
     display: inline-block;
 }
 
+#home-link {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    text-shadow: 1.5px 1.5px grey;
+    padding-right: 1%;
+}
+
 #icon-container {
     display: fixed;
     top: 0px;
-    height: 60px; 
-    width: 60px;
-    margin: 10px 0px 30px 170px;
+    height: 90px; 
+    width: 80%;
+    margin: 40px 10px 0px 30px;
 }
 
 .last_icon {
@@ -232,4 +224,5 @@ input {
     width: 60px;
     border: 5px solid white;
     border-radius: 100%;
+    margin: 10% 70%;  
 }
