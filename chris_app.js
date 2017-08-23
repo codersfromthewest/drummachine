@@ -1,6 +1,8 @@
 'use strict';
 var key_arr = document.getElementsByClassName('key');
 var border = document.getElementById('key-container');
+
+// see the note in darius_app about how this could be refactored to use objects
 var keycode_letters = {
   key_nums: [82, 84, 89, 85, 73, 79, 80, 65, 83, 68, 70, 71, 72, 74, 75, 76],//key codes
   key_letters: ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ';'],//array of keys
